@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glozo</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #fafafa;
+      }
+      main,
+      header {
+        max-width: 800px;
+        margin: auto;
+
+        padding: 50px 15px 0px;
+        /* background-color: #00d6c0; */
+        background-color: white;
+      }
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+      }
+      .logo {
+        margin-bottom: 30px;
+        width: 100%;
+      }
+      .description {
+        width: 60%;
+      }
+      .description p {
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+      .gratitude {
+        width: 100%;
+      }
+      /* === main === */
+      /* table */
+      .table-responsive {
+        overflow-x: auto;
+        width: 100%;
+        margin-bottom: 50px;
+      }
+      /* width */
+      ::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, 0.6);
+      }
+      table {
+        width: 100%;
+        text-align: center;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+      }
+      table th,
+      table td {
+        padding: 10px 5px;
+      }
+      table th {
+        font-size: 20px;
+      }
+
+      tfoot th {
+        text-align: end;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      thead,
+      tbody tr {
+        border-bottom: solid thin;
+        border-color: rgba(0, 0, 0, 0.5);
+      }
+      /* payments */
+      .payment {
+        padding-bottom: 50px;
+      }
+      .payment h2 {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .payment p {
+        font-size: 18px;
+      }
+      .row {
+        display: flex;
+        margin-bottom: 5px;
+      }
+      .col-md-10 {
+        width: calc(10 * (100% / 12));
+      }
+      .col-md-2 {
+        width: calc(2 * (100% / 12));
+      }
+      .account {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+      }
+      .btn {
+        text-decoration: none;
+        color: white;
+        background-color: #5c68e2;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 20px;
+      }
+      @media (max-width: 1200px) {
+        main,
+        header {
+          max-width: 992px;
+        }
+        .description {
+          width: 70%;
+        }
+      }
+      @media (max-width: 992px) {
+        .description {
+          width: 80%;
+        }
+      }
+      @media (max-width: 767px) {
+        main {
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+        .description {
+          width: 100%;
+        }
+        table th,
+        table td {
+          font-size: 15px;
+        }
+        .payment h2 {
+          text-align: center;
+        }
+        .col-7 {
+          width: calc(7 * (100% / 12));
+        }
+        .col-5 {
+          width: calc(5 * (100% / 12));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="https://media.licdn.com/dms/image/D4D0BAQElwGfzxdfoXQ/company-logo_200_200/0/1695751964097/loc_camp_logo?e=2147483647&v=beta&t=nxhKYGms62KP6N_ZKbgBGaPAQaIFu53zeb-8boMvxzE"
+          alt=""
+        />
+      </div>
+      <div class="description">
+        <p>
+          Loc Camp helps organizations to easily connect with their global
+          audience, by transforming their data in over 200 languages, covering a
+          comprehensive range of global
+        </p>
+      </div>
+      <div class="gratitude">
+        <img
+          width="100"
+          src="https://i.ibb.co/S3fSJfV/151618429860259.png"
+          alt=""
+        />
+        <h1>Thank you for Choosing us</h1>
+      </div>
+    </header>
+    <main>
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>Task code</th>
+              <th>Service</th>
+              <th>Source language</th>
+              <th>Target language</th>
+              <th>Unit</th>
+              <th>Qty</th>
+              <th>total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#240</td>
+              <td>Translation</td>
+              <td>English</td>
+              <td>Arabic</td>
+              <td>5</td>
+              <td>1</td>
+              <td>25$</td>
+            </tr>
+            <tr>
+              <td>#241</td>
+              <td>Translation</td>
+              <td>French</td>
+              <td>Arabic</td>
+              <td>12</td>
+              <td>2</td>
+              <td>60$</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th colspan="6">subtotal:</th>
+              <td>85$</td>
+            </tr>
+            <tr>
+              <th colspan="6">Taxes:</th>
+              <td>11.9$</td>
+            </tr>
+            <tr>
+              <th colspan="6">Deductable:</th>
+              <td>-3$</td>
+            </tr>
+            <tr>
+              <th colspan="6">Total:</th>
+              <td>93.9$</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <div class="payment">
+        <h2>Payment Details</h2>
+        <div class="row">
+          <div class="col-md-2 col-5"><p>Vendor:</p></div>
+          <div class="col-md-10 col-7"><p>Loc Camp</p></div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-5"><p>Billed to:</p></div>
+          <div class="col-md-10 col-7"><p>Visa</p></div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-5"><p>Ending with:</p></div>
+          <div class="col-md-10 col-7"><p>*** 1234</p></div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-5"><p>Expiring:</p></div>
+          <div class="col-md-10 col-7"><p>08/2024</p></div>
+        </div>
+        <div class="row">
+          <div class="account">
+            <a target="_blank" href="#loginpage" class="btn">My Account</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
